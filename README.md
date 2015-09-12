@@ -1,5 +1,5 @@
 # OS
-Operating system course excercise
+Operating system course excercises
 EXERCISE 1
 Implementing  ls,rm,kill,ps,wc,cat with few options
 Excercise 2
