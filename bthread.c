@@ -32,14 +32,7 @@ void schedule(int signal)      //signal handler for SIGPROF
 	thread_t *t1;
 
 	ucontext_t dummy;
-		if(head==tail)
-		{
-			sigset_t a,b;
-			 sigemptyset(&a);
-	 		sigaddset(&a, SIGPROF);   
-			 sigprocmask(SIG_BLOCK, &a, &b);
-			swapcontext(&dummy,&head->context);
-		}
+	
 		
 		if(current_thread->active==2)
 		{
