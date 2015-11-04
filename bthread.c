@@ -99,13 +99,9 @@ void kill_thread()
 	sigprocmask(SIG_SETMASK, &b, NULL);
 	acti--;
 	kill(getpid(),SIGPROF);
-/* when the currently executing thread has finished its execution before
- the context switch, then this function should be executed...
-*/
 
-/*the main task is to remove the thread from the ready queue (ofcourse you
- have to block all the signals and then unblock at last..) and at last it
- should call the schedule function. */
+
+/*remove the thread from the ready queue  call the schedule function. */
 
 }
 void hello(void* arg)
@@ -170,7 +166,7 @@ thread_t* create_thread( void (*func) (void*),void* arg)
 	 	
 	 	
 	 	//create main thread
-				printf("Mak threads\n");
+		
 			 	Main->id = thrno++;
 			 	Main->active=2;
 			 	Main->next = NULL;
